@@ -46,7 +46,12 @@ export default function Hero({ photoLocation = "hero" }: { photoLocation?: "hero
               layoutId="profile-photo"
               initial={{ opacity: 0, scale: 0, y: 100, rotate: -20 }}
               animate={{ opacity: 1, scale: 1, y: 0, rotate: 0 }}
-              transition={{ type: "spring", stiffness: 450, damping: 15 }}
+              transition={{ 
+                type: "spring", 
+                stiffness: 60, 
+                damping: 20,
+                mass: 1.2
+              }}
               className="absolute inset-0 overflow-hidden bg-zinc-900 rounded-3xl pointer-events-auto shadow-2xl"
             >
               <img

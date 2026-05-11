@@ -1,5 +1,4 @@
 import { motion } from "motion/react";
-import { Gem, ArrowRight } from "lucide-react";
 
 export default function About({ photoLocation = "about" }: { photoLocation?: "hero" | "about" }) {
   return (
@@ -19,7 +18,12 @@ export default function About({ photoLocation = "about" }: { photoLocation?: "he
             {photoLocation === "about" && (
               <motion.div
                 layoutId="profile-photo"
-                transition={{ type: "spring", stiffness: 450, damping: 25 }}
+                transition={{ 
+                  type: "spring", 
+                  stiffness: 60, 
+                  damping: 20,
+                  mass: 1.2
+                }}
                 className="absolute inset-0 overflow-hidden bg-zinc-900 rounded-3xl pointer-events-auto shadow-2xl"
               >
                 <img
@@ -44,27 +48,6 @@ export default function About({ photoLocation = "about" }: { photoLocation?: "he
           <p className="mt-4 md:mt-6 text-sm md:text-base font-sans leading-relaxed text-zinc-400">
             With a strong foundation in <span className="font-mono text-zinc-100 uppercase tracking-widest text-xs lg:text-sm bg-white/5 py-1 px-2 rounded">Python</span>, <span className="font-mono text-zinc-100 uppercase tracking-widest text-xs lg:text-sm bg-white/5 py-1 px-2 rounded">Machine Learning</span>, and <span className="font-mono text-zinc-100 uppercase tracking-widest text-xs lg:text-sm bg-white/5 py-1 px-2 rounded">SQL</span>, I build high-performance web applications that transform complex data into intuitive, engaging user experiences. I thrive on solving intricate problems and designing elegant, minimalist interfaces.
           </p>
-
-          <motion.div 
-            initial={{ opacity: 0, x: 20 }}
-            whileInView={{ opacity: 1, x: 0 }}
-            viewport={{ once: true }}
-            transition={{ delay: 0.2 }}
-            className="mt-8 p-5 sm:p-6 bg-zinc-800/30 border border-white/10 rounded-2xl flex items-start gap-4 hover:border-white/20 transition-all group"
-          >
-            <div className="p-2 sm:p-3 bg-white/5 rounded-xl group-hover:bg-white/10 transition-colors">
-              <Gem className="w-5 h-5 text-white" />
-            </div>
-            <div className="flex-1">
-              <h4 className="text-white font-display font-bold uppercase text-[10px] sm:text-xs tracking-[0.2em] mb-2 flex items-center justify-between">
-                Top skills
-                <ArrowRight className="w-4 h-4 text-zinc-500 group-hover:text-white group-hover:translate-x-1 transition-all" />
-              </h4>
-              <p className="text-zinc-400 text-xs sm:text-sm font-sans leading-relaxed">
-                Python (Programming Language) • SQL • Microsoft Power BI • Exploratory Data Analysis • Machine Learning
-              </p>
-            </div>
-          </motion.div>
         </motion.div>
       </div>
     </section>
