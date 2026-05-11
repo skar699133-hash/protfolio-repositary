@@ -4,22 +4,22 @@ import { ArrowUpRight } from 'lucide-react';
 
 const PROJECTS = [
   {
+    title: "Handwriting Recognition System",
+    desc: "A deep learning model developed to recognize handwritten text with high accuracy using neural networks and computer vision.",
+    img: "https://images.unsplash.com/photo-1526374965328-7f61d4dc18c5?q=80&w=800&auto=format&fit=crop",
+    techs: ["Python", "Deep Learning", "Machine Learning", "Computer Vision"]
+  },
+  {
     title: "Forecasting of Sales",
-    desc: "Predictive sales model using Python, Financial Modelling, EDA, and ML.",
+    desc: "Comprehensive sales forecasting analysis using Superstore data. Leveraged Python and Power BI for predictive modeling and visualization.",
     img: "https://images.unsplash.com/photo-1551288049-bebda4e38f71?q=80&w=800&auto=format&fit=crop",
-    techs: ["Python", "Machine Learning", "Data Analytics", "Power BI", "Stats & Probability"]
+    techs: ["Python", "Machine Learning", "Data Analytics", "Power BI", "Exploratory Data Analysis"]
   },
   {
-    title: "Netflix Recommendation",
-    desc: "Large-scale user data analysis for personalized content suggestions using Python, EDA, and Process Improvement.",
-    img: "https://images.unsplash.com/photo-1574375927938-d5a98e8ffe85?q=80&w=800&auto=format&fit=crop",
-    techs: ["Python", "Machine Learning", "SQL", "Data Analytics"]
-  },
-  {
-    title: "COVID-19 Trends",
-    desc: "Data visualization and recovery rate prediction using Python, Data Analytics, and ML.",
-    img: "https://images.unsplash.com/photo-1584931423298-c576fda54bd2?q=80&w=800&auto=format&fit=crop",
-    techs: ["Python", "Data Analytics", "Machine Learning", "Stats & Probability"]
+    title: "Querying Large Databases",
+    desc: "Optimized complex SQL queries for multi-million row relational databases, improving data retrieval efficiency and reporting precision.",
+    img: "https://images.unsplash.com/photo-1544383835-bda2bc66a55d?q=80&w=800&auto=format&fit=crop",
+    techs: ["SQL", "Database Management", "Data Analytics", "Analytical Skills"]
   }
 ];
 
